@@ -13,16 +13,16 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="static/css/style.css">
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
 </head>
-<body>
+<body class="bg-dark">
     <div class="wraper">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a href="index.html" class="navbar-brand">UFO Sightings</a>
 
         </nav>
         <div class="jumbotron">
-            <h1>The Truth is Out There</h1>
+            <h1 class="display-4">The Truth is Out There</h1>
         </div>
         <div class="container-fluid">
             <div class="row">
@@ -39,16 +39,32 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                    <form action="">
+                    <form action="" class="bg-dark">
                         <p>Filter Search</p>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                <label for="date">Enter Date</label>
-                                <input type="text" name="" id="datetime" placeholder="1/10/2010">
+                        <ul class="list-group bg-dark">
+                            <li class="list-group-item bg-dark">
+                                <label for="datetime">Enter Date</label>
+                                <input type="text" name="datetime" id="datetime" placeholder="1/10/2010">
                             </li>
-                            <li class="list-group-item">
-                                <button class="btn btn-default" id="filter-btn" type="button">Filter Table</button>
+                            <li class="list-group-item bg-dark">
+                                <label for="city">Enter a City</label> <br>
+                                <input type="text" name="city" id="city" placeholder="benton">
                             </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="date">Ente a State</label> <br>
+                                <input type="text" name="state" id="state" placeholder="ca">
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="date">Enter a Country</label><br>
+                                <input type="text" name="country" id="country" placeholder="us">
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="date">Enter a Shape</label> <br>
+                                <input type="text" name="shape" id="shape" placeholder="circle">
+                            </li>
+                            <!-- <li class="list-group-item bg-dark"> -->
+                                <!-- <button class="btn btn-dark" id="filter-btn" type="button">Filter Table</button> -->
+                            <!-- </li> -->
                         </ul>
                     </form>
                 </div>
